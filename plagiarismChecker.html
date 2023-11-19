@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plagiarism Detection</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Plagiarism Detection</h1>
+    <div class="upload-container">
+      <form id="uploadForm" enctype="multipart/form-data">
+        <div class="file-input">
+          <input type="file" name="file1" id="file1" class="inputfile" required>
+          <label for="file1">Choose a file</label>
+        </div>
+        <div class="file-input">
+          <input type="file" name="file2" id="file2" class="inputfile" required>
+          <label for="file2">Choose a file</label>
+        </div>
+        <button type="submit" class="submit-btn">Check for Plagiarism</button>
+      </form>
+    </div>
+    <div id="result" class="result"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
